@@ -1,0 +1,59 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite" verbose="1">
+    <test name="Test">
+        <classes>
+            <class name="com.anhtester.Bai10_Anotations.LoginTest">
+                <methods>
+                    <include name="Login"/>
+                </methods>
+
+            </class>
+
+            <class name="com.anhtester.Bai10_Anotations.CustomerTest">
+                <methods>
+                    <include name="AddCustomersFlow"/>
+                </methods>
+
+            </class>
+
+            <class name="com.anhtester.Bai10_Anotations.Project">
+                <methods>
+                    <include name="AddProject"/>
+                    <include name="SearchProject"/>
+                </methods>
+
+            </class>
+
+
+        </classes>
+    </test>
+
+    <test name="Test">
+        <classes>
+            <class name="com.anhtester.Bai10_Anotations.LoginTest">
+                <methods>
+                    <include name="Login"/>
+                </methods>
+
+            </class>
+
+            <class name="com.anhtester.Bai10_Anotations.TaskTest">
+                <methods>
+                    <include name="AddTask"/>
+                </methods>
+
+            </class>
+
+            <class name="com.anhtester.Bai10_Anotations.Project">
+                <methods>
+                    <include name="AddProject"/>
+                    <include name="SearchProject"/>
+                </methods>
+
+            </class>
+
+
+        </classes>
+    </test>
+</suite>
