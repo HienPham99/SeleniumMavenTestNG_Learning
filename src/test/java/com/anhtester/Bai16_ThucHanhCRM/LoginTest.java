@@ -69,6 +69,11 @@ public class LoginTest extends BaseTest {
     @Test
     public void testLoginWithPasswordInvalid() {
 
+        //Hiển thị error message
+        //Không đến được trang dashboard
+        //Vấn ở trang Login
+        //URL chứa từ khóa "authentication"
+
         driver.get(InfoCRM.URL);
         waitForPageLoaded();//chờ trang load xong
         SoftAssert softAssert = new SoftAssert();
@@ -83,7 +88,7 @@ public class LoginTest extends BaseTest {
         Assert.assertTrue(checkURLNotAuthen); //muốn ko chứa dùng assertFalse
         //Hàm kiểm tra error message hiển thị
         Assert.assertTrue(checkElementExits(LocatorCRM.alertMessage), "Fail,không hiển thị error message");
-        //Hàm kiểm tra error message có chính xác ko
+        //Hàm kiểm tra error message có chính xác vói yêu cầu ko
         Assert.assertEquals(getTextElement(LocatorCRM.alertMessage), "Invalid email or password","Error message not match.");
         //Hàm kiểm tra header page vẫn tồn tại
         Assert.assertTrue(checkElementExits(LocatorCRM.headerLoginPage), "Fail, Header Login không tồn tại.");
