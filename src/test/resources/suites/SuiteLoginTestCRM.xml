@@ -4,7 +4,7 @@
     <parameter name="browser" value="chrome" />
     <test name="Test Login CRM">
         <classes>
-            <class name="com.anhtester.Bai17_POM.testCases.LoginTest" />
+            <class name="Bai17_POM.testCases.LoginTest" />
         </classes>
 
     </test>
